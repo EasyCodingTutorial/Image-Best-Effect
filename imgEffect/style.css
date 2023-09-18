@@ -1,0 +1,104 @@
+h1 {
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    padding: 2px;
+}
+
+* {
+    outline: none !important;
+    border: none !important;
+}
+
+*::selection {
+    background: #ff0000;
+    color: #000;
+}
+
+body {
+    background: #000;
+}
+
+/* For Img Effect */
+
+#ImgMain {
+    height: 70vh;
+    width: 70vh;
+    max-width: 700px;
+    max-height: 700px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+figure {
+    background: url(https://cdn.pixabay.com/photo/2023/06/17/23/41/abs-workout-8070935_640.jpg);
+    position: relative;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+figure img {
+    position: relative;
+    width: 100%;
+}
+
+#Divisor {
+    background: url(https://cdn.pixabay.com/photo/2023/06/01/07/57/fitness-8033046_640.jpg);
+    width: 50%;
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+    bottom: 0;
+    background-size: cover;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+input::-moz-range-track {
+    -moz-appearance: none;
+    height: 16px;
+    width: 99%;
+    background: #c1bfbf;
+    position: relative;
+
+}
+
+input::-moz-range-thumb {
+    -moz-appearance: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+input:focus::-webkit-slider-thumb {
+    background: #c1bfbf;
+}
+
+input:focus::-moz-range-thumb {
+    background: #c1bfbf;
+}
